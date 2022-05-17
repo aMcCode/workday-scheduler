@@ -69,3 +69,8 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.fa-duotone {
+  height: 15px;
+  width: 200px;
+}
