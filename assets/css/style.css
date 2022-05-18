@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -5,7 +11,7 @@ body {
 }
 
 textarea{
-  background: transparent;
+  background: #adb5bd;
   border: none;
   resize: none;
   color: #000000;
@@ -39,7 +45,8 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1.5px dashed #000000;
+  text-align: right;
 }
 
 .past {
@@ -70,7 +77,12 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.fa-duotone {
-  height: 15px;
-  width: 200px;
+.fa-save {
+  height: 25px;
+  width: 35px;
+}
+
+.time-txt {
+  font-weight: bold;
+  font-size: 17px;
 }
