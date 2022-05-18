@@ -1,6 +1,7 @@
 
+
 var storedTasks = JSON.parse(localStorage.getItem("tasks"));
-console.log(storedTasks);
+// console.log(storedTasks);
 
 
 //#region GENERATE THE HTML
@@ -44,25 +45,36 @@ for(var i = 0; i < time_text_list.length; i++){
 
 
 //#region SAVE THE DATA
-var taskData = [];
-
-
+var taskData = storedTasks ? storedTasks : [];
+console.log(taskData);
 
 $(".saveBtn").click(function () {
 
-    // var saveBtn = $(".saveBtn");
     var rowID = $(this).parent("div").attr("id");
     var task = $(this).prev("textarea").val();
 
     var taskObj = {
         row: rowID,
         description: task
+    };
+
+    if(taskData) {
+        updateRow = taskData.find((r) => r.row == rowID);
+        console.log(updateRow);
+        if (updateRow) {
+          updateRow.description = task;
+          localStorage.setItem("tasks", JSON.stringify(taskData));
+          return;
+        }
+        else {
+          taskData.push(taskObj);
+          localStorage.setItem("tasks", JSON.stringify(taskData));
+        }
     }
-    
-    taskData.push(taskObj);
-    localStorage.setItem("tasks", JSON.stringify(taskData));
-
-
+    else {
+        taskData.push(taskObj);
+        localStorage.setItem("tasks", JSON.stringify(taskData));
+    }
 });
 
 
