@@ -61,7 +61,7 @@ for(var i = 0; i < taskRows.length; i++) {
     // console.log(
     //   `${trTxt}/${currentHour}: isPast=${isPast}, isCurHour= ${isCurHour}, isFuture= ${isFuture}`);
 
-    var color = isCurHour ? "red" : isFuture ? "green" : "#adb5bd";
+    var color = isCurHour ? "#ff5c33" : isFuture ? "#00e600" : "#adb5bd";
 
     var curTxtArea = taskRows[i].querySelectorAll("textarea");
     

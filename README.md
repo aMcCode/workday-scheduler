@@ -1,26 +1,12 @@
 # Work Day Scheduler Starter Code
 
-# User Story
-AS AN employee with a busy schedule
-* I WANT to add important events to a daily planner
-* SO THAT I can manage my time effectively
+# Description
+This application allows the user to record daily events in a planner. The planner displays the current date and flags present, past and future events. Events are saved so that when the app is opened after being closed, the user's activities are not lost.
 
-# Acceptance Criteria
-#GIVEN I am using a daily planner to create a schedule
-* WHEN I open the planner
-* THEN the current day is displayed at the top of the calendar
-* WHEN I scroll down
-* THEN I am presented with time blocks for standard business hours
-* WHEN I view the time blocks for that day
-* THEN each time block is color-coded to indicate whether it is in the past, present, or future
-* WHEN I click into a time block
-* THEN I can enter an event
-* WHEN I click the save button for that time block
-* THEN the text for that event is saved in local storage
-* WHEN I refresh the page
-* THEN the saved events persist
+The following screenshot illustrates the functionality of the application:
 
-Mock-Up
-The following animation demonstrates the application functionality:
+![Alt text](assets/images/readMeImg.png?raw=true "Mockup")
 
-![Alt text](assets/images/05-third-party-apis-homework-demo.gif?raw=true "Mockup")
+As always, updates are needed:
+--Either clear the tasks when the date changes or have the app save data for multiple days and allow the user to move between them.
+
