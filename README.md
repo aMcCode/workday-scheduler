@@ -3,6 +3,9 @@
 # Description
 This application allows the user to record daily events in a planner. The planner displays the current date and flags present, past and future events. Events are saved so that when the app is opened after being closed, the user's activities are not lost.
 
+The app can be accessed at https://amccode.github.io/workday-scheduler/
+The github repo is available at https://github.com/aMcCode/workday-scheduler
+
 The following screenshot illustrates the functionality of the application:
 
 ![Alt text](assets/images/readMeImg.png?raw=true "Mockup")
